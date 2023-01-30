@@ -11,6 +11,7 @@
 		C329AA11298865200054F058 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329AA10298865200054F058 /* ContentView.swift */; };
 		C329AA13298865220054F058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C329AA12298865220054F058 /* Assets.xcassets */; };
 		C329AA16298865220054F058 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C329AA15298865220054F058 /* Preview Assets.xcassets */; };
+		C329AA1F298867DB0054F058 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = C329AA1E298867DB0054F058 /* Logging */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C329AA1F298867DB0054F058 /* Logging in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = NetworkQuality;
+			packageProductDependencies = (
+				C329AA1E298867DB0054F058 /* Logging */,
+			);
 			productName = NetworkQuality;
 			productReference = C329AA0B298865200054F058 /* NetworkQuality.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = C329AA02298865200054F058;
+			packageReferences = (
+				C329AA1D298867DB0054F058 /* XCRemoteSwiftPackageReference "swift-log" */,
+			);
 			productRefGroup = C329AA0C298865200054F058 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -274,11 +282,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gergelytamas.NetworkQuality;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -301,11 +311,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gergelytamas.NetworkQuality;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -336,6 +348,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C329AA1D298867DB0054F058 /* XCRemoteSwiftPackageReference "swift-log" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "http://github.com/apple/swift-log";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C329AA1E298867DB0054F058 /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C329AA1D298867DB0054F058 /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C329AA03298865200054F058 /* Project object */;
 }
