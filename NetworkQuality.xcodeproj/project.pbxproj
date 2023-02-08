@@ -12,6 +12,12 @@
 		C329AA13298865220054F058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C329AA12298865220054F058 /* Assets.xcassets */; };
 		C329AA16298865220054F058 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C329AA15298865220054F058 /* Preview Assets.xcassets */; };
 		C329AA1F298867DB0054F058 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = C329AA1E298867DB0054F058 /* Logging */; };
+		C3A3FB5A299408E100425CAF /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A3FB59299408E100425CAF /* DataController.swift */; };
+		C3A3FB5D29940AA100425CAF /* NetworkQuality.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3A3FB5B29940AA100425CAF /* NetworkQuality.xcdatamodeld */; };
+		C3A3FB5F2994427500425CAF /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A3FB5E2994427500425CAF /* NetworkMonitor.swift */; };
+		C3A3FB61299442BF00425CAF /* InterfaceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A3FB60299442BF00425CAF /* InterfaceData.swift */; };
+		C3A3FB632994434500425CAF /* NetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A3FB622994434500425CAF /* NetworkData.swift */; };
+		C3A3FB65299445E000425CAF /* ShellUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A3FB64299445E000425CAF /* ShellUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +27,12 @@
 		C329AA12298865220054F058 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C329AA15298865220054F058 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C329AA17298865220054F058 /* NetworkQuality.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NetworkQuality.entitlements; sourceTree = "<group>"; };
+		C3A3FB59299408E100425CAF /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		C3A3FB5C29940AA100425CAF /* NetworkQuality.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NetworkQuality.xcdatamodel; sourceTree = "<group>"; };
+		C3A3FB5E2994427500425CAF /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		C3A3FB60299442BF00425CAF /* InterfaceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceData.swift; sourceTree = "<group>"; };
+		C3A3FB622994434500425CAF /* NetworkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkData.swift; sourceTree = "<group>"; };
+		C3A3FB64299445E000425CAF /* ShellUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +71,12 @@
 				C329AA12298865220054F058 /* Assets.xcassets */,
 				C329AA17298865220054F058 /* NetworkQuality.entitlements */,
 				C329AA14298865220054F058 /* Preview Content */,
+				C3A3FB59299408E100425CAF /* DataController.swift */,
+				C3A3FB5B29940AA100425CAF /* NetworkQuality.xcdatamodeld */,
+				C3A3FB5E2994427500425CAF /* NetworkMonitor.swift */,
+				C3A3FB60299442BF00425CAF /* InterfaceData.swift */,
+				C3A3FB622994434500425CAF /* NetworkData.swift */,
+				C3A3FB64299445E000425CAF /* ShellUtility.swift */,
 			);
 			path = NetworkQuality;
 			sourceTree = "<group>";
@@ -148,7 +166,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C329AA11298865200054F058 /* ContentView.swift in Sources */,
+				C3A3FB65299445E000425CAF /* ShellUtility.swift in Sources */,
+				C3A3FB5A299408E100425CAF /* DataController.swift in Sources */,
+				C3A3FB5F2994427500425CAF /* NetworkMonitor.swift in Sources */,
+				C3A3FB5D29940AA100425CAF /* NetworkQuality.xcdatamodeld in Sources */,
+				C3A3FB632994434500425CAF /* NetworkData.swift in Sources */,
 				C329AA0F298865200054F058 /* NetworkQualityApp.swift in Sources */,
+				C3A3FB61299442BF00425CAF /* InterfaceData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +391,19 @@
 			productName = Logging;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		C3A3FB5B29940AA100425CAF /* NetworkQuality.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C3A3FB5C29940AA100425CAF /* NetworkQuality.xcdatamodel */,
+			);
+			currentVersion = C3A3FB5C29940AA100425CAF /* NetworkQuality.xcdatamodel */;
+			path = NetworkQuality.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C329AA03298865200054F058 /* Project object */;
 }
