@@ -11,7 +11,8 @@
 		C329AA11298865200054F058 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329AA10298865200054F058 /* ContentView.swift */; };
 		C329AA13298865220054F058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C329AA12298865220054F058 /* Assets.xcassets */; };
 		C329AA16298865220054F058 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C329AA15298865220054F058 /* Preview Assets.xcassets */; };
-		C329AA1F298867DB0054F058 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = C329AA1E298867DB0054F058 /* Logging */; };
+		C338CF2F29EA02D3001FD2ED /* NetworkQualityTest+DefaultValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C338CF2E29EA02D3001FD2ED /* NetworkQualityTest+DefaultValues.swift */; };
+		C37313722A0449A400BD4B52 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37313712A0449A400BD4B52 /* SettingsView.swift */; };
 		C3A3FB5A299408E100425CAF /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A3FB59299408E100425CAF /* DataController.swift */; };
 		C3A3FB5D29940AA100425CAF /* NetworkQuality.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3A3FB5B29940AA100425CAF /* NetworkQuality.xcdatamodeld */; };
 		C3A3FB5F2994427500425CAF /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A3FB5E2994427500425CAF /* NetworkMonitor.swift */; };
@@ -27,6 +28,8 @@
 		C329AA12298865220054F058 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C329AA15298865220054F058 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C329AA17298865220054F058 /* NetworkQuality.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NetworkQuality.entitlements; sourceTree = "<group>"; };
+		C338CF2E29EA02D3001FD2ED /* NetworkQualityTest+DefaultValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkQualityTest+DefaultValues.swift"; sourceTree = "<group>"; };
+		C37313712A0449A400BD4B52 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C3A3FB59299408E100425CAF /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		C3A3FB5C29940AA100425CAF /* NetworkQuality.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NetworkQuality.xcdatamodel; sourceTree = "<group>"; };
 		C3A3FB5E2994427500425CAF /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
@@ -40,7 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C329AA1F298867DB0054F058 /* Logging in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,10 +75,12 @@
 				C329AA14298865220054F058 /* Preview Content */,
 				C3A3FB59299408E100425CAF /* DataController.swift */,
 				C3A3FB5B29940AA100425CAF /* NetworkQuality.xcdatamodeld */,
+				C338CF2E29EA02D3001FD2ED /* NetworkQualityTest+DefaultValues.swift */,
 				C3A3FB5E2994427500425CAF /* NetworkMonitor.swift */,
 				C3A3FB60299442BF00425CAF /* InterfaceData.swift */,
 				C3A3FB622994434500425CAF /* NetworkData.swift */,
 				C3A3FB64299445E000425CAF /* ShellUtility.swift */,
+				C37313712A0449A400BD4B52 /* SettingsView.swift */,
 			);
 			path = NetworkQuality;
 			sourceTree = "<group>";
@@ -106,7 +110,6 @@
 			);
 			name = NetworkQuality;
 			packageProductDependencies = (
-				C329AA1E298867DB0054F058 /* Logging */,
 			);
 			productName = NetworkQuality;
 			productReference = C329AA0B298865200054F058 /* NetworkQuality.app */;
@@ -120,7 +123,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					C329AA0A298865200054F058 = {
 						CreatedOnToolsVersion = 14.2;
@@ -137,7 +140,6 @@
 			);
 			mainGroup = C329AA02298865200054F058;
 			packageReferences = (
-				C329AA1D298867DB0054F058 /* XCRemoteSwiftPackageReference "swift-log" */,
 			);
 			productRefGroup = C329AA0C298865200054F058 /* Products */;
 			projectDirPath = "";
@@ -170,8 +172,10 @@
 				C3A3FB5A299408E100425CAF /* DataController.swift in Sources */,
 				C3A3FB5F2994427500425CAF /* NetworkMonitor.swift in Sources */,
 				C3A3FB5D29940AA100425CAF /* NetworkQuality.xcdatamodeld in Sources */,
+				C37313722A0449A400BD4B52 /* SettingsView.swift in Sources */,
 				C3A3FB632994434500425CAF /* NetworkData.swift in Sources */,
 				C329AA0F298865200054F058 /* NetworkQualityApp.swift in Sources */,
+				C338CF2F29EA02D3001FD2ED /* NetworkQualityTest+DefaultValues.swift in Sources */,
 				C3A3FB61299442BF00425CAF /* InterfaceData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,9 +216,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -229,7 +235,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,9 +278,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -283,7 +291,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -301,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"NetworkQuality/Preview Content\"";
 				DEVELOPMENT_TEAM = U37XKVV7SY;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -312,7 +321,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gergelytamas.NetworkQuality;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -330,6 +339,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"NetworkQuality/Preview Content\"";
 				DEVELOPMENT_TEAM = U37XKVV7SY;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -341,7 +351,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gergelytamas.NetworkQuality;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -372,25 +382,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		C329AA1D298867DB0054F058 /* XCRemoteSwiftPackageReference "swift-log" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "http://github.com/apple/swift-log";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C329AA1E298867DB0054F058 /* Logging */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C329AA1D298867DB0054F058 /* XCRemoteSwiftPackageReference "swift-log" */;
-			productName = Logging;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C3A3FB5B29940AA100425CAF /* NetworkQuality.xcdatamodeld */ = {
